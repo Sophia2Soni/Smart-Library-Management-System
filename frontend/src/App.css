@@ -1,0 +1,125 @@
+
+/* Main page */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #eef4ff, #f8fbff);
+  box-sizing: border-box;
+}
+
+/* Registration and Login card */
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  padding: 40px 45px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+/* College logo */
+.college-logo {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Main heading */
+.auth-card h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #172554;
+}
+
+/* Registration / Login heading */
+.auth-card h2 {
+  margin: 8px 0 25px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Form */
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input fields */
+.auth-card input {
+  width: 100%;
+  padding: 13px 15px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  outline: none;
+  background: #f9fafb;
+  color: #111827;
+  box-sizing: border-box;
+}
+
+/* Input focus */
+.auth-card input:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Buttons */
+.auth-card form button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.auth-card form button:hover {
+  background: #1d4ed8;
+}
+
+/* Login / Register text */
+.auth-card p {
+  margin-top: 22px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Login / Register switch button */
+.auth-card p button {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .auth-card {
+    padding: 30px 25px;
+  }
+
+  .auth-card h1 {
+    font-size: 24px;
+  }
+
+  .auth-card h2 {
+    font-size: 18px;
+  }
+}

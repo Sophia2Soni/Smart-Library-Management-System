@@ -1,0 +1,251 @@
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+/* ================= HEADER ================= */
+
+.dashboard-header {
+  background: #2563eb;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.dashboard-header p {
+  margin: 6px 0 0;
+  font-size: 16px;
+}
+
+.logout-button {
+  padding: 11px 25px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.dashboard-content {
+  padding: 40px;
+}
+
+.dashboard-content > h2 {
+  text-align: center;
+  margin: 15px 0 30px;
+  color: #111827;
+  font-size: 30px;
+}
+
+/* ================= STATISTICS ================= */
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 45px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h3 {
+  margin: 0 0 15px;
+  color: #374151;
+  font-size: 17px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 34px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* ================= BOOKS SECTION ================= */
+
+.books-section {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Books heading + search */
+
+.books-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.books-header h2 {
+  margin: 0;
+  font-size: 26px;
+  color: #111827;
+}
+
+.book-search {
+  width: 280px;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 15px;
+  outline: none;
+}
+
+.book-search:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ================= BOOK CARDS ================= */
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.book-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 22px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+.book-card h3 {
+  margin: 0 0 12px;
+  font-size: 19px;
+  color: #172554;
+  line-height: 1.4;
+}
+
+.book-card p {
+  margin: 8px 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* ================= AVAILABILITY ================= */
+
+.available {
+  color: #16a34a !important;
+  font-weight: 600;
+}
+
+.out-of-stock {
+  color: #dc2626 !important;
+  font-weight: 600;
+}
+
+/* ================= ISSUE BUTTON ================= */
+
+.issue-button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.issue-button:hover {
+  background: #1d4ed8;
+}
+
+.issue-button:disabled {
+  background: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .books-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .dashboard-header {
+    padding: 18px 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 21px;
+  }
+
+  .dashboard-content {
+    padding: 25px 15px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .books-container {
+    grid-template-columns: 1fr;
+  }
+
+  .books-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .book-search {
+    width: 100%;
+  }
+}
+.book-cover {
+  width: 150px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+}
+.book-cover {
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+}
